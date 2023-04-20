@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Simonetta', cursive;
+}
+
+.join{
+    background-image: url(../../assets/Tasty-Treats-backdrop.jpg);
+    min-height: 100vh;
+}
+
+input, button {
+    appearance: none;
+    background: none;
+    /* border: none; */
+    outline: none;
+}
+
+form {
+    display: flex;
+    position: relative;
+    top:200px;
+    left:450px;
+    width: 60%;
+    box-shadow: 0 0 2px rgba(15 15 15 0.3);
+    border-top-right-radius: 15px;
+}
+
+form::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    bottom: -5px;
+    z-index: 1;
+    background-image: url('../../assets/Emerald-Backdrop2.jpg');
+    /* background-image: linear-gradient(to bottom right, #002524, #9688757f ); */
+}
+
+form .form-inner {
+    position: relative;
+    display: block;
+    padding: 35px;
+    z-index: 2;
+    margin-top: 50px;
+}
+
+form .form-inner h2{
+    color: #FFCE00;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+form .form-inner h3{
+
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 35px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+form .form-inner .form-group {
+    display: block;
+    width: 450px;
+    margin-bottom: 15px;
+}
+
+form .form-inner .form-group label {
+    display: block;
+    color: rgb(249, 240, 240);
+    font-size: 22px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+    margin-left: 50px;
+    font-weight: 600;
+}
+
+form .form-inner .form-group:focus-within label {
+    color: #FFCE00;
+
+}
+
+form .form-inner .form-group input {
+    display: block;
+    width: 90%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    transition: 0.4s;
+    margin-left: 50px;
+    height: 50px;
+    font-size: 18px;
+}
+
+form .form-inner .form-group .input-field {
+    border: 0.01px solid rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
+
+form .form-inner .form-group input:focus {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+} 
+
+form .form-inner .reg {
+    border: 0.01px solid rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
+
+form .form-inner input[type="submit"] {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 8px;
+    background-color: #875d2c;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    font-weight: 900;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+form .form-inner input[type="submit"]:hover{
+    background-position: 100%, 0%;
+    color: white;
+}
+
+.heading{
+    text-align: center;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 50px;   
+}
+
+#logIn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;    
+    background-color: #875d2c;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.register{
+    text-decoration: none;
+    font-weight: 600;
+    color: #FFCE00;
+}
+
+.register:hover{
+    text-decoration: none;
+    color: #875d2c;
+}
+
+.logimg {
+    z-index: 11;
+}
+
+.reg {
+    /* margin-left: 100px; */
+}
+
+.regimg {
+    z-index: 11;
+    margin-left: 50px;
+}
