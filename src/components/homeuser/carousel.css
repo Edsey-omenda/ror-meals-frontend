@@ -1,0 +1,11 @@
+.carouse {
+    position: absolute;
+    top: 400px; 
+}
+
+
+.car-h {
+    position: absolute;
+    top: 400px;
+    left: -250px;
+}
