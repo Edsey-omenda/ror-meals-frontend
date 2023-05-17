@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useGetAllMenu_itemsQuery } from "../../homeuser/ProductsApi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import "./addItem.css";
 
@@ -11,7 +11,8 @@ export default function SetMenu() {
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
   const { data, error, isLoading } = useGetAllMenu_itemsQuery();
-
+  
+  const navigate=useNavigate();
   const [Items, setItems] = useState({
     name: "",
     price: "",
@@ -36,6 +37,7 @@ export default function SetMenu() {
     // .then((deleteItem) => handleDelete(deleteItem));
     console.log("Item Sucessfully Deleted");
     handleDelete(Items);
+    navigate("/admin");
   }
 
   function handleUpdateItem(updatedItem) {
