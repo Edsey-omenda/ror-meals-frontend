@@ -163,25 +163,25 @@ export default function SetMenu() {
                     >
                       {menu_item.on_menu == true ? "onmenu" : "setmenu"}
                     </button>
-                    <Link id={menu_item.id} to={`/EditMenu/${menu_item.id}`}>
-                      <button
-                        id={menu_item.id}
-                        style={{
-                          backgroundColor: "#002524",
-                          width: "120px",
-                          height: "45px",
-                          paddingTop: "10px",
-                          paddingBottom: "15px",
-                          fontSize: "16px",
-                          fontWeight: "600",
-                          borderBottomLeftRadius: "15px",
-                          borderTopRightRadius: "15px",
-                          textAlign: "center",
-                        }}
-                      >
-                        Edit
-                      </button>
-                    </Link>
+//                     <Link id={menu_item.id} to={`/EditMenu/${menu_item.id}`}>
+//                       <button
+//                         id={menu_item.id}
+//                         style={{
+//                           backgroundColor: "#002524",
+//                           width: "120px",
+//                           height: "45px",
+//                           paddingTop: "10px",
+//                           paddingBottom: "15px",
+//                           fontSize: "16px",
+//                           fontWeight: "600",
+//                           borderBottomLeftRadius: "15px",
+//                           borderTopRightRadius: "15px",
+//                           textAlign: "center",
+//                         }}
+//                       >
+//                         Edit
+//                       </button>
+//                     </Link>
                     <br />
                     <button
                       id={menu_item.id}
